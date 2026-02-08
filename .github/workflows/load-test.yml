@@ -28,7 +28,7 @@ jobs:
           exit 1
 
       - name: Install Locust
-        run: pip install locust
+        run: pip install locust zope.event
 
       - name: Run load test
         run: |
