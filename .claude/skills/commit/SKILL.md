@@ -1,3 +1,8 @@
+---
+name: commit
+description: Smart commit with auto-generated commit messages
+---
+
 # Smart Commit Skill
 
 이 스킬은 자동으로 커밋 메시지를 작성하고, 사용자 검토 후 커밋을 수행합니다.
