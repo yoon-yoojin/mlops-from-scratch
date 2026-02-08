@@ -11,6 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       - name: Build and start app
         run: |
           docker build -t app .
@@ -28,7 +33,7 @@ jobs:
           exit 1
 
       - name: Install Locust
-        run: pip install locust zope.event
+        run: pip install locust
 
       - name: Run load test
         run: |
